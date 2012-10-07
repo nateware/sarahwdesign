@@ -1,0 +1,4 @@
+s3_id: AKIAIRD6WQY3XXSIUTBQ
+s3_secret: 4ZmQZJ3MdMxAAD5JNm+AC6kvK1pNdi7yFPHfKck1
+s3_bucket: nateware-blog.s3.amazonaws.com
+#cloudfront_distribution_id: YOUR_CLOUDFRONT_DIST_ID (OPTIONAL)
