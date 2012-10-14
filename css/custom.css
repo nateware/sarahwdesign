@@ -1,0 +1,27 @@
+/*
+ * Sarah W Design CSS
+ */
+
+img.rounded {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+div.navbar {
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p.author {
+  display: inline;
+}
+
+#mailto {
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  padding: 0;
+}
+
+#blurb strong {
+  font-size: 120%;
+}

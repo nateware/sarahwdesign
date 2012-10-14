@@ -8,7 +8,6 @@ date: 2013-01-01
         <div class="row">
             <div class="span3">
               <a href="index.html"><img src="img/logo.png" alt="{{site.title}}"></a>
-              {% include blurb.md %}
             </div>
             <div class="span9">
                 <p class="pull-right">
@@ -21,6 +20,11 @@ date: 2013-01-01
                     <a href="#" class="sb min rss mytooltip" title="RSS">RSS</a>
                 </p>
             </div>
+        </div>
+        <div class="row">
+          <div class="span12" id="blurb">
+            {% include blurb.md %}
+          </div>
         </div>
         <hr />
         <div class="row">
@@ -39,19 +43,17 @@ date: 2013-01-01
         <div class="row">
             <div class="span12" id="content">
                 <ul class="thumbnails">
-                    <li class="span3">
+                   {% for item in site.portfolio %}
+                      <li class="span3">
                         <div class="thumbnail">
-                            <a href="detail.html"><img src="img/122.jpg" alt="thumbnail" /></a>
-                            <div class="category"><i class="icon-tag icon-white"></i> <a href="#">Photoshop</a>, <a href="#">Typography</a></div>
+                          <a href="{{ item.image }}"><img src="{{ item.image }}" alt="thumbnail" /></a>
                             <div class="caption">
-                                <h2>Lorem ipsum</h2>
-                                <p class="post-date">19th July 2012</p>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <hr />
-                                <p><a href="detail.html" class="btn">Read on &rarr;</a></p>
+                              <h2>{{item.title }}</h2>
+                              <p>{{item.caption}}</p>
                             </div>
                         </div>
-                    </li>
+                      </li>
+                    {% endfor %}
                     <li class="span3">
                         <div class="thumbnail">
                             <a href="detail.html"><img src="img/tape.jpg" alt="thumbnail" /></a>

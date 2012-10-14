@@ -1,3 +1,3 @@
-<b>Sarah Wiger</b> is a <b>Graphic Designer</b> with 15 years experience
-creating <b>Print and Online</b> solutions for the fashion industry.
-<b>Affordable rates</b> and open to large or small brands.
+<strong>Sarah Wiger</strong> is a <strong>Graphic Designer</strong> with 15 years experience
+creating <strong>Print and Online</strong> solutions for the <strong>Fashion Industry</strong>.
+<strong>Affordable rates</strong> and experienced with both boutique and Fortune 500 brands.
