@@ -144,6 +144,7 @@ textarea {
 body {
   margin: 0;
   font-family: 'Droid Serif', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 22px;
   color: #333333;
@@ -1124,6 +1125,7 @@ button,
 select,
 textarea {
   font-family: 'Droid Serif', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 label {
   display: block;

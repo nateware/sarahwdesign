@@ -1,6 +1,6 @@
 class AssetTag < Liquid::Tag
   CONFIG = YAML.load_file("_assets.yml")
-  
+
   def initialize(tag_name, name, kind, tokens)
     super tag_name, name, tokens
     @name   = name.to_s.strip
@@ -8,7 +8,7 @@ class AssetTag < Liquid::Tag
   end
 
   def render(context)
-    if Jekyll::ENV == 'production'
+    if ENV['JEKYLL_ENV'] == 'production'
       markup "/assets/#{name_with_ext}"
     else
       (assets_for_name.map do |asset|

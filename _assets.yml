@@ -1,14 +1,11 @@
 javascript_compressor: closure
 
 javascripts:
-  application:
-    - _site/js/jquery-1.6.4.js
-    - _site/js/jquery.cookie.js
-    - _site/js/jquery.twitter.js
-    - _site/js/
-    - _site/js/app.js
+  main:
+    - _site/js/bootstrap.js
+    - _site/js/custom.js
 
 stylesheets:
-  screen:
-    - _site/css/screen.css
-    - _site/css/syntax.css
+  main:
+    - _site/css/bootstrap.css
+    - _site/css/custom.css
