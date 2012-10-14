@@ -16,10 +16,6 @@ class ReadFileTag < Liquid::Tag
 end
 
 module Jekyll
-  class Site
-    attr_accessor :portfolio
-  end
-
   # Read the portfolio images, titles, captions
   class PortfolioGenerator < Generator
     safe true
@@ -35,9 +31,9 @@ module Jekyll
         %w[txt TXT html HTML htm HTM]
 
       glob = "#{dir}/**.{#{suf*','}}"
-      puts "glob = #{glob} ; dir = #{dir} PWD = #{Dir.pwd}"
-      Dir[glob].each do |f|
-        puts "portfolio image = #{f}"
+      #puts "glob = #{glob} ; dir = #{dir} PWD = #{Dir.pwd}"
+      Dir[glob].sort.each do |f|
+        #puts "portfolio image = #{f}"
 
         # See if there's a caption
         capglob = f.sub(/\.\w+$/, ".{#{capsuf*','}}")
@@ -50,7 +46,7 @@ module Jekyll
         # Split into caption and title
         title, caption = captxt.split(/[\r\n]+/,2)
 
-        # Add to the items
+        # Add to the portfolio for the template
         site.config['portfolio'] << {
           'image'   => f,
           'caption' => caption,

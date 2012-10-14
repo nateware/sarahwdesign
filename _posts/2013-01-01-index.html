@@ -6,47 +6,29 @@ date: 2013-01-01
 
     <div class="container">
         <div class="row">
-            <div class="span3">
-              <a href="index.html"><img src="img/logo.png" alt="{{site.title}}"></a>
-            </div>
-            <div class="span9">
-                <p class="pull-right">
-                    <a href="#" class="sb min twitter mytooltip" title="Twitter">Twitter</a>
-                    <a href="#" class="sb min facebook mytooltip" title="Facebook">Facebook</a>
-                    <a href="#" class="sb min email mytooltip" title="E-Mail">E-Mail</a>
-                    <a href="#" class="sb min linkedin mytooltip" title="LinkedIn">LinkedIn</a>
-                    <a href="#" class="sb min pinterest mytooltip" title="Pinterest">Pinterest</a>
-                    <a href="#" class="sb min podcast mytooltip" title="Podcast">Podcast</a>
-                    <a href="#" class="sb min rss mytooltip" title="RSS">RSS</a>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-          <div class="span12" id="blurb">
-            {% include blurb.md %}
-          </div>
-        </div>
-        <hr />
-        <div class="row">
             <div class="span12">
                 <ul class="nav nav-pills">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Design</a></li>
-                    <li><a href="index.html">Photography</a></li>
-                    <li><a href="index.html">Portfolio</a></li>
-                    <li><a href="index.html">Blog</a></li>
-                    <li><a href="about.html">About me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
         <div class="row">
-            <div class="span12" id="content">
+          <div class="span2">
+            <a href="index.html"><img src="images/sarah-wiger.png" alt="{{site.title}}"></a>
+          </div>
+          <div class="span10" id="blurb">
+            {% include blurb.html %}
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="span12" id="portfolio">
                 <ul class="thumbnails">
                    {% for item in site.portfolio %}
                       <li class="span3">
                         <div class="thumbnail">
-                          <a href="{{ item.image }}"><img src="{{ item.image }}" alt="thumbnail" /></a>
+                          <a title="{{ item.title }}" href="{{ item.image }}"><img src="{{ item.image }}" alt="{{ item.title }}" /></a>
                             <div class="caption">
                               <h2>{{item.title }}</h2>
                               <p>{{item.caption}}</p>
@@ -54,143 +36,13 @@ date: 2013-01-01
                         </div>
                       </li>
                     {% endfor %}
-                    <li class="span3">
-                        <div class="thumbnail">
-                            <a href="detail.html"><img src="img/tape.jpg" alt="thumbnail" /></a>
-                            <div class="category"><i class="icon-tag icon-white"></i> <a href="#">Photoshop</a>, <a href="#">Typography</a></div>
-                            <div class="caption">
-                                <h2>Lorem ipsum</h2>
-                                <p class="post-date">19th July 2012</p>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <hr />
-                                <p><a href="detail.html" class="btn">Read on &rarr;</a></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="span3">
-                        <div class="thumbnail">
-                            <a href="detail.html"><img src="img/typography00.jpg" alt="thumbnail" /></a>
-                            <div class="category"><i class="icon-tag icon-white"></i> <a href="#">Photoshop</a>, <a href="#">Typography</a></div>
-                            <div class="caption">
-                                <h2>Lorem ipsum</h2>
-                                <p class="post-date">19th July 2012</p>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <hr />
-                                <p><a href="detail.html" class="btn">Read on &rarr;</a></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="span3">
-                        <div class="thumbnail">
-                            <a href="detail.html"><img src="img/ls.jpg" alt="thumbnail" /></a>
-                            <div class="category"><i class="icon-tag icon-white"></i> <a href="#">Photoshop</a>, <a href="#">Typography</a></div>
-                            <div class="caption">
-                                <h2>Lorem ipsum</h2>
-                                <p class="post-date">19th July 2012</p>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <hr />
-                                <p><a href="detail.html" class="btn">Read on &rarr;</a></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="span3">
-                        <div class="thumbnail">
-                            <a href="detail.html"><img src="img/pl.jpg" alt="thumbnail" /></a>
-                            <div class="category"><i class="icon-tag icon-white"></i> <a href="#">Photoshop</a>, <a href="#">Typography</a></div>
-                            <div class="caption">
-                                <h2>Lorem ipsum</h2>
-                                <p class="post-date">19th July 2012</p>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <hr />
-                                <p><a href="detail.html" class="btn">Read on &rarr;</a></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="span3">
-                        <div class="thumbnail">
-                            <a href="detail.html"><img src="img/typography00.jpg" alt="thumbnail" /></a>
-                            <div class="category"><i class="icon-tag icon-white"></i> <a href="#">Photoshop</a>, <a href="#">Typography</a></div>
-                            <div class="caption">
-                                <h2>Lorem ipsum</h2>
-                                <p class="post-date">19th July 2012</p>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <hr />
-                                <p><a href="detail.html" class="btn">Read on &rarr;</a></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="span3">
-                        <div class="thumbnail">
-                            <a href="detail.html"><img src="img/tape.jpg" alt="thumbnail" /></a>
-                            <div class="category"><i class="icon-tag icon-white"></i> <a href="#">Photoshop</a>, <a href="#">Typography</a></div>
-                            <div class="caption">
-                                <h2>Lorem ipsum</h2>
-                                <p class="post-date">19th July 2012</p>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <hr />
-                                <p><a href="detail.html" class="btn">Read on &rarr;</a></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="span3">
-                        <div class="thumbnail">
-                            <a href="detail.html"><img src="img/ls.jpg" alt="thumbnail" /></a>
-                            <div class="category"><i class="icon-tag icon-white"></i> <a href="#">Photoshop</a>, <a href="#">Typography</a></div>
-                            <div class="caption">
-                                <h2>Lorem ipsum</h2>
-                                <p class="post-date">19th July 2012</p>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <hr />
-                                <p><a href="detail.html" class="btn">Read on &rarr;</a></p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="pagination">
-                    <ul>
-                        <li><a href="#">Prev</a></li>
-                        <li class="active">
-                            <a href="#">1</a>
-                        </li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">Next</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr />
-        <div class="row">
-            <div class="span3">
-                <h3>Navigate</h3>
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Design</a></li>
-                    <li><a href="index.html">Photography</a></li>
-                    <li><a href="index.html">Portfolio</a></li>
-                    <li><a href="index.html">Blog</a></li>
-                    <li><a href="about.html">About me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="span3">
-                <h3>Archives</h3>
-                <ul class="links">
-                    <li><a href="#">March 2012</a></li>
-                    <li><a href="#">April 2012</a></li>
-                    <li><a href="#">May 2012</a></li>
-                    <li><a href="#">June 2012</a></li>
-                    <li><a href="#">July 2012</a></li>
                 </ul>
             </div>
         </div>
         <hr />
         <div class="row">
             <div class="span12">
-                <p>
-                    Copyright &copy; 2012 Company Inc.
-                </p>
+                <small>Copyright &copy; Sarah Wiger Graphic Design</small>
             </div>
         </div>
     </div>
