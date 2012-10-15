@@ -143,8 +143,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: 'Droid Serif', Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Magra', 'Tahoma', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 22px;
   color: #333333;
@@ -523,7 +522,7 @@ h4,
 h5,
 h6 {
   margin: 11px 0;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Magra', 'Tahoma', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1;
   color: inherit;
@@ -1124,8 +1123,7 @@ input,
 button,
 select,
 textarea {
-  font-family: 'Droid Serif', Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Magra', 'Tahoma', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 label {
   display: block;
@@ -1635,7 +1633,7 @@ select:focus:required:invalid:focus {
   position: relative;
   margin-bottom: 0;
   *margin-left: 0;
-  font-size: 15px;
+  font-size: 16px;
   vertical-align: top;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
@@ -1656,7 +1654,7 @@ select:focus:required:invalid:focus {
   height: 22px;
   min-width: 15px;
   padding: 4px 5px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 22px;
   text-align: center;
@@ -1881,7 +1879,7 @@ legend + .control-group {
   *zoom: 1;
   padding: 4px 14px;
   margin-bottom: 0;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   *line-height: 22px;
   text-align: center;
@@ -2751,7 +2749,7 @@ input[type="submit"].btn.btn-mini {
 }
 .btn-group > .btn,
 .btn-group > .dropdown-menu {
-  font-size: 15px;
+  font-size: 16px;
 }
 .btn-group > .btn-mini {
   font-size: 11px;
@@ -2760,7 +2758,7 @@ input[type="submit"].btn.btn-mini {
   font-size: 12px;
 }
 .btn-group > .btn-large {
-  font-size: 15px;
+  font-size: 16px;
 }
 .btn-group > .btn:first-child {
   margin-left: 0;
@@ -3379,7 +3377,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Magra', 'Tahoma', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
