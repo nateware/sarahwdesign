@@ -2,19 +2,6 @@
 # Adapted from http://charliepark.org/tags-in-jekyll/
 # as well as the AssetTag stuff
 #
-
-class ReadFileTag < Liquid::Tag
-  def initialize(tag_name, name, kind, tokens)
-    @name = name.to_s.strip
-    @kind = kind.to_s
-    @tokens = tokens
-  end
-
-  def render(context)
-  end
-
-end
-
 module Jekyll
   # Read the portfolio images, titles, captions
   class PortfolioGenerator < Generator
@@ -48,6 +35,7 @@ module Jekyll
 
         # Add to the portfolio for the template
         site.config['portfolio'] << {
+          'id'      => f.gsub(/\W+/,'_'),
           'image'   => f,
           'caption' => caption,
           'title'   => title,

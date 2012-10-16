@@ -15,10 +15,11 @@ date: 2013-01-01
         </div>
         <div class="row">
           <div class="span2">
-            <a href="index.html"><img src="images/sarah-wiger.png" alt="{{site.title}}"></a>
+            <a href="/"><img src="/images/sarah-wiger-pic.jpg" alt="{{site.title}}" id="mugshot" class="rounded"></a>
           </div>
           <div class="span10" id="blurb">
-            {% include blurb.html %}
+            <p>{% include blurb.html %}</p>
+            <p id="contact"><span id="mailto">Email Sarah</span> or call/text <span id="cellph"></span></p>
           </div>
         </div>
         <hr />
@@ -28,7 +29,8 @@ date: 2013-01-01
                    {% for item in site.portfolio %}
                       <li class="span3">
                         <div class="thumbnail">
-                          <a title="{{ item.title }}" href="{{ item.image }}"><img src="{{ item.image }}" alt="{{ item.title }}" /></a>
+                          <a data-toggle="lightbox" title="{{ item.title }}" href="#{{item.id}}"><img
+                             src="{{ item.image }}" alt="{{ item.title }}" /></a>
                             <div class="caption">
                               <h2>{{item.title }}</h2>
                               <p>{{item.caption}}</p>
@@ -39,6 +41,14 @@ date: 2013-01-01
                 </ul>
             </div>
         </div>
+                   {% for item in site.portfolio %}
+                      <div class="lightbox fade" id="{{ item.id }}" style="display: none;">
+                        <div class="lightbox-content">
+                          <img src="{{ item.image }}" alt="{{item.title}}"><br>
+                          <p>{{item.caption}}</p>
+                        </div>
+                      </div>
+                    {% endfor %}
         <hr />
         <div class="row">
             <div class="span12">

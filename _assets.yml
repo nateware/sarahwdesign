@@ -3,9 +3,11 @@ javascript_compressor: closure
 javascripts:
   main:
     - _site/js/bootstrap.js
+    - _site/js/bootstrap-lightbox.js
     - _site/js/custom.js
 
 stylesheets:
   main:
     - _site/css/bootstrap.css
+    - _site/css/bootstrap-lightbox.css
     - _site/css/custom.css

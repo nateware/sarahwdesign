@@ -2,10 +2,40 @@
  * Sarah W Design CSS
  */
 
+body {
+  /*background-color: #528B8B;*/
+  background-color: #5F9EA0; /* cadetblue */
+  background-color: #8EE5EE;
+  background-color: #afe3d9;
+  background-color: #7AC5CD;
+  background-color: #90C0CD;
+  background-color: #B4CDCD;
+  background-color: #008080;
+  background-color: #96CDCD;
+  background-color: #96D0CD;
+}
+
+#mugshot {
+  width: 150px;
+  height: 150px;
+}
+
+#portfolio {
+}
+
+.thumbnail {
+  background-color: #fff;
+}
+
+/*#content {
+  background-color: #fff;
+  margin: 10px;
+}*/
+
 img.rounded {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 div.navbar {
@@ -16,6 +46,12 @@ p.author {
   display: inline;
 }
 
+#blurb {
+  font-size: 20px;
+  line-height: 34px;
+}
+
 #blurb strong {
   font-size: 120%;
+  font-weight: bold;
 }
