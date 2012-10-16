@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# sync up portfolio with dropbox
+
+fromdir=$HOME/Dropbox/SarahPortfolio
+portfolio=`dirname $0`
+
+for f in $portfolio/*
+do
+  git rm -f $f
+done
+
+git commit -m 'flush portfolio'
+
+cp $fromdir/* $portfolio
+
+git add $portfolio/*
+
+git commit -m 'sync portfolio'
+
