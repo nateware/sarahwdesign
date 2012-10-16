@@ -29,8 +29,8 @@ date: 2013-01-01
                    {% for item in site.portfolio %}
                       <li class="span3">
                         <div class="thumbnail">
-                          <a data-toggle="lightbox" title="{{ item.title }}" href="#{{item.id}}"><img
-                             src="{{ item.image }}" alt="{{ item.title }}" /></a>
+                          <a data-toggle="fancybox" data-fancybox-group="portfolio" title="{{ item.caption }}" id="{{item.id}}"
+                             href="{{item.image}}"><img src="{{ item.image }}" alt="{{ item.title }}" /></a>
                             <div class="caption">
                               <h2>{{item.title }}</h2>
                               <p>{{item.caption}}</p>
@@ -41,14 +41,6 @@ date: 2013-01-01
                 </ul>
             </div>
         </div>
-                   {% for item in site.portfolio %}
-                      <div class="lightbox fade" id="{{ item.id }}" style="display: none;">
-                        <div class="lightbox-content">
-                          <img src="{{ item.image }}" alt="{{item.title}}"><br>
-                          <p>{{item.caption}}</p>
-                        </div>
-                      </div>
-                    {% endfor %}
         <hr />
         <div class="row">
             <div class="span12">
