@@ -7,7 +7,8 @@ portfolio=`dirname $0`
 
 for f in $portfolio/*
 do
-  git rm -f $f
+  [ "$f" = "$0" ] && continue
+  echo git rm -f $f
 done
 
 git commit -m 'flush portfolio'
