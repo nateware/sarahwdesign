@@ -4,25 +4,27 @@ title: Sarah Wiger Graphic Design
 date: 2013-01-01
 ---
 
+  <div id="swirly">
     <div class="container">
         <div class="row">
-            <div class="span12">
-                <ul class="nav nav-pills">
-                    <li class="active"><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+          <div class="span5" id="logo">
+            ~ Sarah Wiger ~
+          </div>
+          <div class="span7" id="contact">
+            <span id="mailto"></span> | <span id="cellph"></span></p>
+          </div>
         </div>
         <div class="row">
-          <div class="span2">
-            <a href="/"><img src="/images/sarah-wiger-pic.jpg" alt="{{site.title}}" id="mugshot" class="rounded"></a>
-          </div>
-          <div class="span10" id="blurb">
-            <p>{% include blurb.html %}</p>
-            <p id="contact"><span id="mailto">Email Sarah</span> or call/text <span id="cellph"></span></p>
+          <div class="span12 rounded" id="leader">
+            <div class="span2">
+              <a href="/"><img src="/images/sarah-wiger-pic.jpg" alt="{{site.title}}" id="mugshot" class="rounded"></a>
+            </div>
+            <div class="span9" id="blurb">
+              <p>{% include blurb.html %}</p>
+            </div>
           </div>
         </div>
-        <hr />
+        <hr class="style-two">
         <div class="row">
             <div class="span12" id="portfolio">
                 <ul class="thumbnails">
@@ -32,7 +34,7 @@ date: 2013-01-01
                           <a data-toggle="fancybox" data-fancybox-group="portfolio" title="{{ item.caption }}" id="{{item.id}}"
                              href="{{item.image}}"><img src="{{ item.image }}" alt="{{ item.title }}" /></a>
                             <div class="caption">
-                              <h2>{{item.title }}</h2>
+                              <h4>{{item.title }}</h4>
                               <p>{{item.caption}}</p>
                             </div>
                         </div>
@@ -47,4 +49,5 @@ date: 2013-01-01
                 <small>Copyright &copy; Sarah Wiger Graphic Design</small>
             </div>
         </div>
-    </div>
+     </div>
+  </div>

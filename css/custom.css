@@ -4,7 +4,6 @@
 
 body {
   /*background-color: #528B8B;*/
-  background-color: #5F9EA0; /* cadetblue */
   background-color: #8EE5EE;
   background-color: #afe3d9;
   background-color: #7AC5CD;
@@ -13,18 +12,42 @@ body {
   background-color: #008080;
   background-color: #96CDCD;
   background-color: #96D0CD;
+  background-color: #5F9EA0; /* cadetblue */
+  /*background: url('/images/grungy-teal6.jpg');*/
+  /* Flexible */
+  /*background-color: #6A8E94;*/
+  background-image: url(/images/body-bg5.png);
 }
 
-#mugshot {
-  width: 150px;
-  height: 150px;
+#swirly {
+  background: url(/images/swirly2.png) no-repeat;
 }
 
-#portfolio {
+#logo {
+  font-family: 'Condiment', cursive;
+  font-size: 48px;
+  min-height: 54px;
+  text-shadow: 0.1em 0.1em 0.2em silver;
+  margin-top: 40px;
+  margin-bottom: -10px;
+}
+
+#contact {
+  text-align: right;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+#contact a {
+  color: #F5F5DC; /*beige*/
 }
 
 .thumbnail {
   background-color: #fff;
+}
+
+.hellyeah {
+  color: #c00;
 }
 
 /*#content {
@@ -32,7 +55,7 @@ body {
   margin: 10px;
 }*/
 
-img.rounded {
+.rounded {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -46,6 +69,16 @@ p.author {
   display: inline;
 }
 
+#leader {
+  background-color: #96D0CD;
+  background-color: #EEEEE0;
+  margin-top: 10px;
+  padding-bottom: 0px;
+  /* transparent red thingy */
+  background-color: rgba(20, 80, 100, 0.9);
+  color: #FAF0E6; /*linen*/
+}
+
 #blurb {
   font-size: 20px;
   line-height: 34px;
@@ -55,3 +88,24 @@ p.author {
   font-size: 120%;
   font-weight: bold;
 }
+
+#mugshot {
+  margin: 6px;
+}
+
+hr.style-two {
+  border: 0;
+  height: 3px;
+  margin: 16px 0;
+  background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
+  background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
+}
+
+.head-space {
+  margin: 22px 0;
+}
+
+
+
