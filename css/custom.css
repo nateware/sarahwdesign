@@ -2,7 +2,11 @@
  * Sarah W Design CSS
  */
 
-body {
+#body {
+  background-color: #B9F1EE;
+}
+
+#content {
   /*background-color: #528B8B;*/
   background-color: #5F9EA0; /* cadetblue */
   background-color: #8EE5EE;
@@ -13,11 +17,13 @@ body {
   background-color: #008080;
   background-color: #96CDCD;
   background-color: #96D0CD;
+  background-color: #7CFCFF;
+  background-color: white;
+  padding: 10px;
+  margin: 20px;
 }
 
 #mugshot {
-  width: 150px;
-  height: 150px;
 }
 
 #portfolio {
@@ -27,15 +33,10 @@ body {
   background-color: #fff;
 }
 
-/*#content {
-  background-color: #fff;
-  margin: 10px;
-}*/
-
-img.rounded {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+.rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 div.navbar {
